@@ -1,4 +1,9 @@
 /* Generela styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -106,3 +111,14 @@ body {
 
 
   }
+.history {
+  color: #ff7b00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+}
+
+.history:hover {
+  color: #00d5ff;
+}
+

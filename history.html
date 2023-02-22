@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Titillium font  - use this one or change to your own. search google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="history.css" />
+
+    <title>HTMLs Historia & DOM</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <h1 class="header-caption">HTMLs Historia & Dokumentobjektmodellen</h1>
+      <nav class="primary-navigation">
+        <ul class="primary-navigation__links">
+          <li><a class="nav-link" href="#main-con">Historia</a></li>
+          <li><a class="nav-link" href="#dom">DOM</a></li>
+          <li><a class="nav-link" href="#contact">Kontakta Mig</a></li>
+          <li>
+            <a class="historia" href="index.html">Tillbaka</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content" id="main-con">
+      <section class="main-content__history">
+        <header class="main-content__header">
+          <h2>HTMLs Historia</h2>
+        </header>
+        <p>
+          HTML (Hypertext Markup Language) är det primära formatet som används
+          för att skapa webbsidor. Det lanserades för första gången 1990 av Tim
+          Berners-Lee, en brittisk ingenjör, med syftet att göra det möjligt för
+          forskare att dela information med varandra. HTML-koden är en serie av
+          taggar som beskriver innehållets layout och formatering. Genom åren
+          har HTML utvecklats och idag är det den vanligaste standarden för att
+          skapa och visa webbsidor. HTML har genomgått flera versioner sedan det
+          först lanserades. Den första versionen, HTML 1.0, var mycket begränsad
+          i sin funktionalitet och användes endast för att strukturera text.
+          Efterföljande versioner har inkluderat fler taggar och funktioner för
+          att möjliggöra mer avancerad webbutveckling. Idag är den senaste
+          versionen HTML5, som innehåller många nya funktioner och förbättringar
+          som gör webbutveckling ännu mer kraftfull och flexibel.
+        </p>
+        <img
+          class="inline-image | inline-image-medium"
+          src="image.png"
+          alt="alla HTML-versioner"
+        />
+      </section>
+      <section id="dom" class="main-content__dom">
+        <header class="main-content__header">
+          <h2>Hur fungerar Dokumentobjektmodellen (DOM)?</h2>
+        </header>
+        <p>Dokumentobjektmodellen, eller DOM</p>
+        <p>
+          Dokumentobjektmodellen (DOM) är en programmeringsgränssnitt som
+          representerar HTML-dokumentet som en hierarkisk struktur av element
+          och attribut. Med hjälp av DOM kan man ändra och manipulera webbsidans
+          innehåll och utseende genom att ändra elementens egenskaper, lägga
+          till nya element eller ta bort befintliga. DOM kan också användas för
+          att dynamiskt uppdatera webbsidans innehåll utan att behöva ladda om
+          hela sidan.
+        </p>
+        <p>
+          När en webbläsare laddar en HTML-sida, analyseras sidans kod och
+          konverteras till en DOM-struktur som webbläsaren kan använda för att
+          rendera sidan. Genom att manipulera DOM kan man skapa dynamiska och
+          interaktiva webbsidor, till exempel genom att lägga till
+          händelsehanterare som reagerar på användarens klick och muspekare.
+        </p>
+        <p>
+          I slutändan är det genom DOM som HTML och JavaScript samverkar för att
+          skapa moderna webbsidor med avancerade funktioner och interaktioner.
+        </p>
+        <img
+          class="inline-image | inline-image-medium"
+          src="image2.png"
+          alt="alla HTML-versioner"
+        />
+      </section>
+      <section id="contact">
+        <h2>Kontakta Mig</h2>
+        <form class="form-area">
+          <label>Namn:</label>
+          <input type="text" name="name" class="form-input" />
+          <label>Email:</label>
+          <input type="email" name="email" class="form-input" />
+          <label>Meddelande:</label>
+          <textarea name="message" class="form-input"></textarea>
+          <input type="submit" value="Skicka" class="form-submit" />
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2023 HTMLs Historia & DOM - Mandus Lison</p>
+    </footer>
+  </body>
+</html>
