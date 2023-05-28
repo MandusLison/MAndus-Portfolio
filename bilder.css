@@ -1,0 +1,36 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  margin: 20px;
+  max-width: 70%;
+}
+.image-grid img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.zoom {
+	max-width: 100%;
+	height: auto;
+	transition: all 0.3s ease-in-out;
+	filter: blur(2px);
+  display: block;
+}
+
+.zoom:hover {
+	transform: scale(1.2);
+	filter: blur(0px);
+}
+
+.tillbaka {
+	font-size: x-large;
+}
+
